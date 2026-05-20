@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Nudge — Live Here and Now</title>
+  <meta name="description" content="Your Nudge is a mindfulness app rooted in ancient wisdom. Cultivate awareness, transform daily life, and return to the present moment — anywhere, anytime." />
+  <meta property="og:title" content="Your Nudge — Live Here and Now" />
+  <meta property="og:description" content="Ancient wisdom meets modern life. 112 timeless techniques, 50+ daily activities, gentle reminders. Free to start, iOS only." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-mark">
+          <div class="logo-ring logo-ring--1"></div>
+          <div class="logo-ring logo-ring--2"></div>
+          <div class="logo-dot"></div>
+        </div>
+        <span>Your Nudge</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#features" class="nav__link">Features</a></li>
+        <li><a href="#techniques" class="nav__link">Techniques</a></li>
+        <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+      </ul>
+      <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" class="btn btn--nav" target="_blank" rel="noopener">Download Free</a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#techniques">Techniques</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://apps.apple.com/us/app/your-nudge/id6739236420" target="_blank" rel="noopener">Download Free</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <svg class="hero__mandala" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="400" cy="400" r="340" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.15"/>
+          <circle cx="400" cy="400" r="280" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.2"/>
+          <circle cx="400" cy="400" r="220" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+          <circle cx="400" cy="400" r="160" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="400" cy="400" r="100" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+          <circle cx="400" cy="400" r="50" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+          <line x1="60" y1="400" x2="740" y2="400" stroke="currentColor" stroke-width="0.4" opacity="0.1"/>
+          <line x1="400" y1="60" x2="400" y2="740" stroke="currentColor" stroke-width="0.4" opacity="0.1"/>
+          <line x1="160" y1="160" x2="640" y2="640" stroke="currentColor" stroke-width="0.4" opacity="0.1"/>
+          <line x1="640" y1="160" x2="160" y2="640" stroke="currentColor" stroke-width="0.4" opacity="0.1"/>
+          <circle cx="400" cy="400" r="8" fill="currentColor" opacity="0.5"/>
+        </svg>
+        <svg class="hero__mandala hero__mandala--2" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="200" cy="200" r="180" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="6 4" opacity="0.2"/>
+          <circle cx="200" cy="200" r="120" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 6" opacity="0.25"/>
+          <circle cx="200" cy="200" r="60" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__badge reveal">Mindfulness for Modern Life</div>
+        <h1 class="hero__title reveal reveal--d1">
+          Your Nudge to live<br /><em>Here and Now</em>
+        </h1>
+        <p class="hero__sub reveal reveal--d2">
+          Ancient wisdom meets daily life. Turn ordinary moments into meditation — while cooking, walking, working, or commuting.
+        </p>
+        <div class="hero__actions reveal reveal--d3">
+          <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" class="btn btn--primary" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on App Store
+          </a>
+          <a href="#features" class="btn btn--ghost">Explore Features</a>
+        </div>
+        <p class="hero__meta reveal reveal--d4">Free to start &nbsp;·&nbsp; Pay what you want &nbsp;·&nbsp; iOS only</p>
+      </div>
+
+      <div class="hero__scroll">
+        <div class="scroll-indicator">
+          <div class="scroll-indicator__dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <span class="stat__n" data-count="112">0</span>
+            <span class="stat__l">Ancient Techniques</span>
+          </div>
+          <div class="stat reveal reveal--d1">
+            <span class="stat__n" data-count="50" data-suffix="+">0</span>
+            <span class="stat__l">Daily Activities</span>
+          </div>
+          <div class="stat reveal reveal--d2">
+            <span class="stat__n">5000+</span>
+            <span class="stat__l">Years of Wisdom</span>
+          </div>
+          <div class="stat reveal reveal--d3">
+            <span class="stat__n">$0</span>
+            <span class="stat__l">To Get Started</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES / THREE PATHS -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Three Paths</span>
+          <h2>Awareness in every<br />dimension of life</h2>
+          <p>Nudge meets you where you are — whether you're a dedicated meditator or just someone trying to slow down and breathe.</p>
+        </div>
+        <div class="features__grid">
+          <div class="fcard reveal">
+            <div class="fcard__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="32" cy="32" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="fcard__num">01</span>
+            <h3>Cultivate<br />Awareness</h3>
+            <p>Explore 112 timeless meditation techniques from the Vigyan Bhairav Tantra — a 5,000-year-old Sanskrit text. Step-by-step guidance and audio instruction included.</p>
+            <span class="fcard__pill">112 Techniques</span>
+          </div>
+          <div class="fcard fcard--gold reveal reveal--d1">
+            <div class="fcard__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M32 10C32 10 14 22 14 34C14 43.941 22.059 52 32 52C41.941 52 50 43.941 50 34C50 22 32 10 32 10Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M22 38C25 30 32 24 42 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="32" cy="34" r="5" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="fcard__num">02</span>
+            <h3>Live with<br />Awareness</h3>
+            <p>Fully engage your five senses and transform 50+ everyday activities into mindful practice. Cooking, walking, washing — every act becomes a meditation.</p>
+            <span class="fcard__pill">50+ Activities</span>
+          </div>
+          <div class="fcard reveal reveal--d2">
+            <div class="fcard__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="1.5"/>
+                <polyline points="32,20 32,32 40,38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <path d="M14 14L12 8M50 14L52 8M32 12V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="fcard__num">03</span>
+            <h3>Return to<br />Awareness</h3>
+            <p>Gentle, custom-timed nudges interrupt wandering thoughts and invite you back to the present — exactly when you need it most.</p>
+            <span class="fcard__pill">Smart Reminders</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="philosophy">
+      <div class="container">
+        <div class="philosophy__inner">
+          <div class="philosophy__visual reveal">
+            <div class="mandala-viz">
+              <div class="mv-ring mv-ring--1"></div>
+              <div class="mv-ring mv-ring--2"></div>
+              <div class="mv-ring mv-ring--3"></div>
+              <div class="mv-ring mv-ring--4"></div>
+              <div class="mv-core">◎</div>
+            </div>
+          </div>
+          <div class="philosophy__copy reveal reveal--d1">
+            <span class="tag">The Foundation</span>
+            <h2>Choiceless Awareness</h2>
+            <blockquote>"The non-dual traditions of the East tell us that real freedom is choiceless awareness. Awareness is our natural state."</blockquote>
+            <p>Thoughts pull us away. Nudge gently brings us back. Not through force or discipline, but through gentle reminders that what you're looking for is already here.</p>
+            <p>You don't need a meditation cushion. You don't need silence. You just need to be <em>present</em> — and Nudge helps you find your way back, moment by moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNIQUES -->
+    <section class="techniques" id="techniques">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Ancient Wisdom</span>
+          <h2>112 Doorways to<br />the Present</h2>
+          <p>The Vigyan Bhairav Tantra contains 112 techniques for direct awakening — each one a different path to the same destination: now.</p>
+        </div>
+        <div class="techniques__grid">
+          <div class="tcard reveal">
+            <span class="tcard__n">01</span>
+            <h4>Breath Awareness</h4>
+            <p>Rest attention on the gap between breaths — the space where the mind naturally stills.</p>
+          </div>
+          <div class="tcard reveal reveal--d1">
+            <span class="tcard__n">07</span>
+            <h4>Sound Dissolution</h4>
+            <p>Let any sound arise and dissolve without labeling. Pure listening, without a listener.</p>
+          </div>
+          <div class="tcard reveal reveal--d2">
+            <span class="tcard__n">23</span>
+            <h4>Open Sky Gaze</h4>
+            <p>Look into the open sky with soft eyes. Let your gaze become as vast as the sky itself.</p>
+          </div>
+          <div class="tcard reveal reveal--d3">
+            <span class="tcard__n">49</span>
+            <h4>Skin Sensitivity</h4>
+            <p>Feel the air touching your skin. Every sensation becomes a doorway into the present.</p>
+          </div>
+          <div class="tcard reveal reveal--d1">
+            <span class="tcard__n">77</span>
+            <h4>Pure Witness</h4>
+            <p>Watch thoughts like clouds passing. You are the sky — vast, still, and unchanging.</p>
+          </div>
+          <div class="tcard reveal reveal--d2">
+            <span class="tcard__n">112</span>
+            <h4>Choiceless Seeing</h4>
+            <p>Look without choosing what to see. Let everything be as it is, without preference.</p>
+          </div>
+        </div>
+        <div class="techniques__footer reveal">
+          <p>+ 106 more techniques with audio guidance and step-by-step instructions in the app</p>
+          <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" class="btn btn--primary" target="_blank" rel="noopener">Explore All 112 Techniques</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS / ACTIVITIES -->
+    <section class="activities" id="how-it-works">
+      <div class="container">
+        <div class="activities__inner">
+          <div class="activities__copy reveal">
+            <span class="tag">Daily Life</span>
+            <h2>Turn every moment<br />into practice</h2>
+            <p>You don't need a special room, a timer, or silence. Nudge transforms activities you're already doing into opportunities for presence.</p>
+            <div class="activity-chips">
+              <span class="chip">🍳 Cooking</span>
+              <span class="chip">🚶 Walking</span>
+              <span class="chip">🚿 Showering</span>
+              <span class="chip">💻 Working</span>
+              <span class="chip">🧹 Cleaning</span>
+              <span class="chip">🚌 Commuting</span>
+              <span class="chip">☕ Tea / Coffee</span>
+              <span class="chip">🌿 Gardening</span>
+              <span class="chip">📚 Reading</span>
+              <span class="chip chip--more">+ 40 more</span>
+            </div>
+          </div>
+          <div class="activities__phone reveal reveal--d1">
+            <div class="phone">
+              <div class="phone__frame">
+                <div class="phone__notch"></div>
+                <div class="phone__screen">
+                  <div class="phone__bar">
+                    <span class="phone__time">9:41</span>
+                    <span>●●●</span>
+                  </div>
+                  <div class="phone__app">
+                    <p class="phone__label">Current Activity</p>
+                    <h3 class="phone__activity" id="phoneActivity">Morning Walk</h3>
+                    <p class="phone__instruction" id="phoneInstruction">Feel the ground beneath each step. Let each footfall be a complete arrival in the present moment.</p>
+                    <div class="phone__nudge">
+                      <span class="phone__nudge-icon">🔔</span>
+                      <span>Next nudge in <strong id="nudgeTimer">12 min</strong></span>
+                    </div>
+                    <div class="phone__progress">
+                      <div class="phone__progress-bar" id="progressBar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Pricing</span>
+          <h2>Pay what feels right</h2>
+          <p>Awareness should be accessible to everyone. Start free — and if Nudge changes your life, choose what to give.</p>
+        </div>
+        <div class="pricing__grid">
+          <div class="pcard reveal">
+            <h3>Free Forever</h3>
+            <div class="pcard__price">$0</div>
+            <ul>
+              <li>Core meditation techniques</li>
+              <li>Daily activity practices</li>
+              <li>Gentle nudge reminders</li>
+              <li>No ads, ever</li>
+            </ul>
+            <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" class="btn btn--outline" target="_blank" rel="noopener">Get Started Free</a>
+          </div>
+          <div class="pcard pcard--featured reveal reveal--d1">
+            <div class="pcard__badge">Most Popular</div>
+            <h3>Your Choice</h3>
+            <div class="pcard__price">$9.99<span class="pcard__per">/yr</span></div>
+            <p class="pcard__sub">Or $19.99–$99.99 to support the mission</p>
+            <ul>
+              <li>All 112 techniques unlocked</li>
+              <li>Full audio guidance library</li>
+              <li>All 50+ daily activities</li>
+              <li>Unlimited custom nudges</li>
+              <li>Cancel anytime</li>
+              <li>No ads, ever</li>
+            </ul>
+            <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" class="btn btn--primary" target="_blank" rel="noopener">Download &amp; Choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">FAQ</span>
+          <h2>Common Questions</h2>
+        </div>
+        <div class="faq__list">
+          <div class="fq reveal">
+            <button class="fq__q">What is Your Nudge?<span class="fq__icon" aria-hidden="true">+</span></button>
+            <div class="fq__a"><p>Nudge is a mindfulness app rooted in ancient wisdom — the Vigyan Bhairav Tantra. It helps you cultivate awareness, live with awareness in daily life, and gently return to the present with timely nudges.</p></div>
+          </div>
+          <div class="fq reveal reveal--d1">
+            <button class="fq__q">What does "Choiceless Awareness" mean?<span class="fq__icon" aria-hidden="true">+</span></button>
+            <div class="fq__a"><p>It's the essence of mindfulness — awareness without effort or judgment. Nudge is designed to help you taste this state in daily life, not just in formal meditation sessions.</p></div>
+          </div>
+          <div class="fq reveal reveal--d2">
+            <button class="fq__q">Do I have to sit and meditate to use Nudge?<span class="fq__icon" aria-hidden="true">+</span></button>
+            <div class="fq__a"><p>Not at all. Nudge works in everyday life — while cooking, walking, working, or commuting. It's about being present wherever you are, not about finding time to sit still.</p></div>
+          </div>
+          <div class="fq reveal">
+            <button class="fq__q">Is it suitable for beginners?<span class="fq__icon" aria-hidden="true">+</span></button>
+            <div class="fq__a"><p>Absolutely. No meditation experience required. The app meets you where you are, whether you've practiced for years or are brand new to mindfulness.</p></div>
+          </div>
+          <div class="fq reveal reveal--d1">
+            <button class="fq__q">What is the Vigyan Bhairav Tantra?<span class="fq__icon" aria-hidden="true">+</span></button>
+            <div class="fq__a"><p>A 5,000-year-old Sanskrit text containing a dialogue between Shiva and Parvati, describing 112 techniques for directly experiencing the present moment. It's the foundation of many Eastern contemplative traditions.</p></div>
+          </div>
+          <div class="fq reveal reveal--d2">
+            <button class="fq__q">How does the pay-what-you-want model work?<span class="fq__icon" aria-hidden="true">+</span></button>
+            <div class="fq__a"><p>Start completely free. If you find value in the app, you choose what to pay — from $9.99 to $99.99 per year. No ads regardless of what you pay, and you can cancel anytime.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-final">
+      <div class="container">
+        <div class="cta-final__inner reveal">
+          <div class="cta-final__mandala">
+            <div class="mv-ring mv-ring--1"></div>
+            <div class="mv-ring mv-ring--2"></div>
+            <div class="mv-core">◎</div>
+          </div>
+          <h2>Most of your life is lived<br />in the <em>small moments</em>.</h2>
+          <p>Make them count.</p>
+          <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+          <span class="cta-final__note">Free to start &nbsp;·&nbsp; iOS only &nbsp;·&nbsp; No ads, ever</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <div class="nav__logo-mark">
+              <div class="logo-ring logo-ring--1"></div>
+              <div class="logo-ring logo-ring--2"></div>
+              <div class="logo-dot"></div>
+            </div>
+            <span>Your Nudge</span>
+          </a>
+          <p>Ancient wisdom for modern life.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="X / Twitter" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4>App</h4>
+            <a href="#features">Features</a>
+            <a href="#techniques">Techniques</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms &amp; Conditions</a>
+          </div>
+          <div class="footer__col">
+            <h4>Download</h4>
+            <a href="https://apps.apple.com/us/app/your-nudge/id6739236420" target="_blank" rel="noopener">App Store</a>
+            <p class="footer__ios">iOS only</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Your Nudge. All rights reserved.</p>
+        <p>Made with presence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
