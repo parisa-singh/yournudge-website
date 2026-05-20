@@ -322,11 +322,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   pointer-events: none;
 }
 .hero__bg-img {
-  width: 120%;
-  height: 120%;
+  width: 135%;
+  height: 135%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.25;
+  opacity: 0.30;
+  animation: gentleSpin 80s linear infinite;
 }
 .hero__bg-overlay {
   position: absolute;
@@ -1097,6 +1098,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* --- Large tablet / small desktop (iPad Pro landscape, 13" laptops) --- */
 @media (max-width: 1024px) {
   .features__grid { gap: 16px; }
   .philosophy__inner { gap: 48px; }
@@ -1104,39 +1107,132 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer__top { gap: 40px; }
 }
 
-@media (max-width: 960px) {
-  .plans { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
-}
+/* --- Tablet landscape (iPad Mini/Air landscape, large Android tablets) --- */
+@media (max-width: 900px) {
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
 
-@media (max-width: 768px) {
-  .nav__links, .btn--nav { display: none; }
-  .nav__burger { display: flex; }
-
-  .stats__grid { grid-template-columns: repeat(2, 1fr); }
-
-  .features__grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+  .features, .techniques, .pricing, .cta-final { padding: 88px 0; }
+  .philosophy, .activities, .faq { padding: 88px 0; }
 
   .philosophy__inner { grid-template-columns: 1fr; gap: 40px; }
   .philosophy__visual { order: -1; }
-  .philosophy__visual img { width: 200px; height: 200px; }
+  .philosophy__visual img { width: 220px; height: 220px; }
 
-  .techniques__grid { grid-template-columns: 1fr 1fr; }
+  .activities__inner { grid-template-columns: 1fr; gap: 40px; }
+  .activities__phone { order: -1; }
 
-  .activities__inner { grid-template-columns: 1fr; gap: 48px; }
+  .plans { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+}
+
+/* --- Tablet portrait / large phone (iPad portrait, iPhone Plus/Max) --- */
+@media (max-width: 768px) {
+  .nav__links, .btn--nav { display: none; }
+  .nav__burger { display: flex; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+  .nav__inner { gap: 16px; }
+
+  .hero { padding: 120px 20px 80px; }
+
+  .stats { padding: 40px 0; }
+  .stats__grid { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 24px 16px; }
+  .stat__n { font-size: 2.2rem; }
+
+  .features__grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+  .fcard { padding: 40px 28px; }
+
+  .mandala-viz { width: 240px; height: 240px; }
+  .mv-ring--3 { inset: 50px; }
+  .mv-ring--4 { inset: 70px; }
+
+  .techniques__grid { grid-template-columns: repeat(2, 1fr); }
+
   .phone-wrap { width: 220px; }
-
-  .plans { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
 
   .footer__top { grid-template-columns: 1fr; gap: 40px; }
   .footer__nav { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* --- Large phone / phone landscape (iPhone 14 Pro Max, large Android) --- */
+@media (max-width: 640px) {
+  .container { padding: 0 20px; }
+
+  .features, .techniques, .pricing, .cta-final { padding: 72px 0; }
+  .philosophy, .activities, .faq { padding: 72px 0; }
+  .section-head { margin-bottom: 48px; }
+
+  .fcard { padding: 32px 24px; }
+  .plan { padding: 32px 24px; }
+  .plan__price { font-size: 2.6rem; }
+  .plans__note { padding: 32px 20px; }
+
+  .cta-final::before { width: 360px; height: 360px; }
+
+  .chip { padding: 9px 14px; }
+}
+
+/* --- Standard phone (iPhone 14, Pixel, most Androids) --- */
 @media (max-width: 480px) {
-  .techniques__grid { grid-template-columns: 1fr; }
-  .footer__nav { grid-template-columns: 1fr; }
+  .container { padding: 0 16px; }
+
+  .hero { padding: 110px 16px 72px; }
   .hero__actions { flex-direction: column; align-items: center; }
-  .stats__grid { grid-template-columns: repeat(2, 1fr); }
-  .phone-wrap { width: 190px; }
+  .hero__actions .btn { width: 100%; max-width: 300px; justify-content: center; }
+
+  .stat { padding: 20px 12px; }
+  .stat__n { font-size: 2rem; }
+
+  .features, .techniques, .pricing, .cta-final { padding: 64px 0; }
+  .philosophy, .activities, .faq { padding: 64px 0; }
+  .section-head { margin-bottom: 40px; }
+
+  .techniques__grid { grid-template-columns: 1fr; }
+
+  .phone-wrap { width: 200px; }
+
+  .fq__q { padding: 18px 20px; font-size: 0.93rem; }
+  .fq__a p { padding: 0 20px 20px; }
+
+  .footer__nav { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+/* --- Small phone (iPhone SE, iPhone 12 mini, small Android) --- */
+@media (max-width: 390px) {
+  .hero__title { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .hero__sub { font-size: 0.95rem; }
+
+  .stat__n { font-size: 1.8rem; }
+  .stat__l { font-size: 0.72rem; }
+
+  .fcard h3 { font-size: 1.4rem; }
+  .fcard { padding: 28px 20px; }
+
+  .plan__price { font-size: 2.2rem; }
+
+  .phone-wrap { width: 180px; }
+
+  .nav__inner { padding: 0 16px; }
+  .mobile-menu { padding: 90px 24px 40px; }
+  .mobile-menu a { font-size: 1.4rem; }
+}
+
+/* --- Very small phone (360px and under, small Android) --- */
+@media (max-width: 360px) {
+  .hero__badge { font-size: 0.7rem; padding: 6px 12px; }
+  .btn { padding: 12px 20px; font-size: 0.88rem; }
+  .chip { padding: 8px 12px; font-size: 0.8rem; }
+  .stat__n { font-size: 1.6rem; }
+  .phone-wrap { width: 160px; }
+}
+
+/* --- Reduced motion preference --- */
+@media (prefers-reduced-motion: reduce) {
+  .hero__bg-img,
+  .philosophy__visual img,
+  .mv-core,
+  .mv-ring,
+  .scroll-indicator__dot { animation: none !important; }
+  .reveal { transition-duration: 0.01ms !important; }
 }
 
 @media print {
