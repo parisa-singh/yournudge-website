@@ -2,7 +2,7 @@
 
 ## Project Overview
 Marketing website for **Your Nudge**, an iOS mindfulness app (App Store ID: 6739236420).
-Hosted on GitHub Pages at: `https://parisa-singh.github.io/yournudge-website/`
+Hosted on GitHub Pages at: `https://parisa-singh.github.io/Your-Nudge-Website/`
 Target domain: `https://yournudge.com/` (custom domain — not yet configured)
 
 ## Tech Stack
