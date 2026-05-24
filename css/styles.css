@@ -895,6 +895,27 @@ a.chip--more:hover {
   box-shadow: 0 32px 80px rgba(0,0,0,0.6);
 }
 
+/* Two-phone pair layout */
+.phones-pair {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+.phone-wrap--front {
+  width: 220px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.phone-wrap--back {
+  width: 195px;
+  flex-shrink: 0;
+  margin-top: 32px;
+  opacity: 0.55;
+  filter: brightness(0.8);
+  z-index: 0;
+}
+
 /* ============================================================
    PRICING — Three Plans
    ============================================================ */
@@ -1282,6 +1303,9 @@ a.chip--more:hover {
 
   .meditation__inner { grid-template-columns: 1fr; gap: 40px; }
   .meditation__phone { order: -1; }
+  .phone-wrap--back { display: none; }
+  .phones-pair { display: block; }
+  .phones-pair .phone-wrap--front { width: 220px; margin: 0 auto; }
 
   .stay__inner { grid-template-columns: 1fr; gap: 40px; }
   .stay__phone { order: -1; }
