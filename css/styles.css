@@ -460,11 +460,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
-   FEATURES / THREE PATHS
+   FEATURES / THREE PILLARS
    ============================================================ */
 .features {
   padding: 120px 0;
-  background: var(--bg);
+  background: linear-gradient(to bottom, var(--bg), var(--bg-alt) 80px, var(--bg-alt));
 }
 .features__grid {
   display: grid;
@@ -565,8 +565,7 @@ a.fcard:hover .fcard__explore {
    GUIDED MEDITATION
    ============================================================ */
 .meditation-section {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
+  background: linear-gradient(to bottom, var(--bg-alt), var(--bg) 80px, var(--bg));
   padding: 120px 0;
 }
 .meditation__inner {
@@ -599,10 +598,24 @@ a.fcard:hover .fcard__explore {
    STAY SECTION
    ============================================================ */
 .stay-section {
-  background: var(--bg-alt);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(to bottom, var(--bg-alt), var(--bg) 80px, var(--bg));
   padding: 120px 0;
+}
+.stay__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.stay__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.stay__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .stay__grid {
   display: grid;
@@ -667,12 +680,10 @@ a.chip--more:hover {
 }
 
 /* ============================================================
-   PHILOSOPHY
+   PHILOSOPHY / FOUNDATION
    ============================================================ */
 .philosophy {
-  background: var(--bg-alt);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(to bottom, var(--bg-alt), var(--bg) 80px, var(--bg));
   padding: 120px 0;
 }
 .philosophy__inner {
@@ -731,12 +742,12 @@ a.chip--more:hover {
   z-index: 1;
 }
 .philosophy__visual img {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 36px;
   margin: 0 auto;
-  opacity: 0.9;
-  filter: drop-shadow(0 0 48px rgba(99,176,248,0.4));
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(99,176,248,0.15), 0 0 48px rgba(99,176,248,0.15);
 }
 
 @keyframes pulsate {
@@ -749,11 +760,11 @@ a.chip--more:hover {
 }
 
 /* ============================================================
-   TECHNIQUES
+   TECHNIQUES / ANCIENT WISDOM
    ============================================================ */
 .techniques {
   padding: 120px 0;
-  background: var(--bg);
+  background: linear-gradient(to bottom, var(--bg), var(--bg-alt) 80px, var(--bg-alt));
 }
 .techniques__grid {
   display: grid;
@@ -807,11 +818,10 @@ a.chip--more:hover {
 }
 
 /* ============================================================
-   HOW IT WORKS / ACTIVITIES
+   GUIDED ACTIVITIES
    ============================================================ */
 .activities {
-  background: var(--bg-alt);
-  border-top: 1px solid var(--border);
+  background: linear-gradient(to bottom, var(--bg), var(--bg-alt) 80px, var(--bg-alt));
   padding: 120px 0;
 }
 .activities__inner {
@@ -896,7 +906,7 @@ a.chip--more:hover {
    ============================================================ */
 .pricing {
   padding: 120px 0;
-  background: var(--bg);
+  background: linear-gradient(to bottom, var(--bg-alt), var(--bg) 80px, var(--bg));
 }
 .plans {
   display: grid;
@@ -1044,8 +1054,7 @@ a.chip--more:hover {
    FAQ
    ============================================================ */
 .faq {
-  background: var(--bg-alt);
-  border-top: 1px solid var(--border);
+  background: linear-gradient(to bottom, var(--bg), var(--bg-alt) 80px, var(--bg-alt));
   padding: 120px 0;
 }
 .faq__list {
@@ -1117,7 +1126,7 @@ a.chip--more:hover {
    ============================================================ */
 .cta-final {
   padding: 120px 0;
-  background: var(--bg);
+  background: linear-gradient(to bottom, var(--bg-alt), var(--bg) 80px, var(--bg));
   position: relative;
   overflow: hidden;
 }
@@ -1280,6 +1289,8 @@ a.chip--more:hover {
   .meditation__inner { grid-template-columns: 1fr; gap: 40px; }
   .meditation__phone { order: -1; }
 
+  .stay__inner { grid-template-columns: 1fr; gap: 40px; }
+  .stay__phone { order: -1; }
   .stay__grid { grid-template-columns: 1fr; max-width: 480px; }
 
   .plans { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
