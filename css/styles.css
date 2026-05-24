@@ -607,65 +607,58 @@ a.fcard:hover .fcard__explore {
   gap: 80px;
   align-items: center;
 }
-.stay__cards {
+.stay__copy .tag { margin-bottom: 20px; }
+.stay__copy h2 {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.stay__copy > p {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+.stay__features {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
+}
+.stay__feature {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.stay__feature-icon {
+  font-size: 1.3rem;
+  color: var(--blue);
+  opacity: 0.8;
+  flex-shrink: 0;
+  width: 32px;
+  text-align: center;
+  padding-top: 3px;
+  line-height: 1;
+}
+.stay__feature strong {
+  display: block;
+  font-family: var(--ff-serif);
+  font-size: 1.05rem;
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.stay__feature p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin: 0;
 }
 .stay__phone {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.stay__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.stay-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 48px 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  transition: transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s;
-}
-.stay-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(99,176,248,0.25);
-  box-shadow: var(--shadow-md);
-}
-.stay-card__icon {
-  font-size: 2.4rem;
-  color: var(--blue);
-  opacity: 0.8;
-  line-height: 1;
-}
-.stay-card h3 {
-  font-family: var(--ff-serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--white);
-}
-.stay-card p {
-  font-size: 0.95rem;
-  color: var(--text-mid);
-  line-height: 1.75;
-}
-.stay-card__note {
-  font-size: 0.72rem;
-  color: var(--blue);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 600;
-  opacity: 0.7;
-  margin-top: 4px;
 }
 
 /* "More" chip as a link */
@@ -874,11 +867,12 @@ a.chip--more:hover {
   font-weight: 500;
 }
 
-/* Phone / Screenshot */
+/* Phone / Screenshot — order: -1 puts phone left on desktop and top on mobile */
 .activities__phone {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: -1;
 }
 .phone-wrap {
   position: relative;
@@ -1291,7 +1285,6 @@ a.chip--more:hover {
 
   .stay__inner { grid-template-columns: 1fr; gap: 40px; }
   .stay__phone { order: -1; }
-  .stay__grid { grid-template-columns: 1fr; max-width: 480px; }
 
   .plans { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
 }
@@ -1331,7 +1324,6 @@ a.chip--more:hover {
   .features, .techniques, .pricing, .cta-final { padding: 72px 0; }
   .philosophy, .activities, .faq, .meditation-section, .stay-section { padding: 72px 0; }
   .section-head { margin-bottom: 48px; }
-  .stay-card { padding: 36px 28px; }
 
   .fcard { padding: 32px 24px; }
   .plan { padding: 32px 24px; }
@@ -1361,8 +1353,6 @@ a.chip--more:hover {
   .features, .techniques, .pricing, .cta-final { padding: 64px 0; }
   .philosophy, .activities, .faq, .meditation-section, .stay-section { padding: 64px 0; }
   .section-head { margin-bottom: 40px; }
-  .stay-card { padding: 28px 20px; }
-  .stay-card__icon { font-size: 2rem; }
 
   .techniques__grid { grid-template-columns: 1fr; }
 
