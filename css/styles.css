@@ -561,18 +561,98 @@ a.fcard:hover .fcard__explore {
   transform: translateX(4px);
 }
 
-/* Stub sections (Guided Meditation, Stay — fleshed out in next batch) */
+/* ============================================================
+   GUIDED MEDITATION
+   ============================================================ */
 .meditation-section {
-  padding: 80px 0;
-  background: var(--bg-alt);
+  background: var(--bg);
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 120px 0;
 }
+.meditation__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.meditation__copy .tag { margin-bottom: 20px; }
+.meditation__copy h2 {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.meditation__copy > p {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+.meditation__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================================================
+   STAY SECTION
+   ============================================================ */
 .stay-section {
-  padding: 80px 0;
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  padding: 120px 0;
+}
+.stay__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.stay-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 48px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s;
+}
+.stay-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99,176,248,0.25);
+  box-shadow: var(--shadow-md);
+}
+.stay-card__icon {
+  font-size: 2.4rem;
+  color: var(--blue);
+  opacity: 0.8;
+  line-height: 1;
+}
+.stay-card h3 {
+  font-family: var(--ff-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--white);
+}
+.stay-card p {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+}
+.stay-card__note {
+  font-size: 0.72rem;
+  color: var(--blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-top: 4px;
 }
 
 /* "More" chip as a link */
@@ -1157,14 +1237,19 @@ a.chip--more:hover {
   .features__grid { grid-template-columns: repeat(2, 1fr); }
 
   .features, .techniques, .pricing, .cta-final { padding: 88px 0; }
-  .philosophy, .activities, .faq { padding: 88px 0; }
+  .philosophy, .activities, .faq, .meditation-section, .stay-section { padding: 88px 0; }
 
   .philosophy__inner { grid-template-columns: 1fr; gap: 40px; }
   .philosophy__visual { order: -1; }
-  .philosophy__visual img { width: 220px; height: 220px; }
+  .philosophy__visual img { width: 160px; height: 160px; }
 
   .activities__inner { grid-template-columns: 1fr; gap: 40px; }
   .activities__phone { order: -1; }
+
+  .meditation__inner { grid-template-columns: 1fr; gap: 40px; }
+  .meditation__phone { order: -1; }
+
+  .stay__grid { grid-template-columns: 1fr; max-width: 480px; }
 
   .plans { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
 }
@@ -1202,8 +1287,9 @@ a.chip--more:hover {
   .container { padding: 0 20px; }
 
   .features, .techniques, .pricing, .cta-final { padding: 72px 0; }
-  .philosophy, .activities, .faq { padding: 72px 0; }
+  .philosophy, .activities, .faq, .meditation-section, .stay-section { padding: 72px 0; }
   .section-head { margin-bottom: 48px; }
+  .stay-card { padding: 36px 28px; }
 
   .fcard { padding: 32px 24px; }
   .plan { padding: 32px 24px; }
@@ -1231,8 +1317,10 @@ a.chip--more:hover {
   .stat__n { font-size: 2rem; }
 
   .features, .techniques, .pricing, .cta-final { padding: 64px 0; }
-  .philosophy, .activities, .faq { padding: 64px 0; }
+  .philosophy, .activities, .faq, .meditation-section, .stay-section { padding: 64px 0; }
   .section-head { margin-bottom: 40px; }
+  .stay-card { padding: 28px 20px; }
+  .stay-card__icon { font-size: 2rem; }
 
   .techniques__grid { grid-template-columns: 1fr; }
 
