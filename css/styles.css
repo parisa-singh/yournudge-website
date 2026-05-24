@@ -985,6 +985,37 @@ a.chip--more:hover {
 .plan--featured .plan__features li::before { color: var(--orange); }
 .plan--deep .plan__features li::before { color: var(--teal); }
 
+.plan__badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(255,157,92,0.2);
+  border: 1px solid rgba(255,157,92,0.35);
+  border-radius: var(--r-full);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+.plans__same-note {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plans__same-note span {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--blue-dim);
+  border: 1px solid rgba(99,176,248,0.2);
+  border-radius: var(--r-full);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--blue);
+  letter-spacing: 0.04em;
+}
+
 .plans__note {
   display: flex;
   flex-direction: column;
